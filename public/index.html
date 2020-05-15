@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat grupal</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- es como si pushietamos http://localhost:3002/socket.io/socket.io.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener('load',function(){
+            cargarMensajes();
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Chat Grupal</h1>
+    </header>
+
+    <section>
+        <article>
+            <div class="contenedorMensaje">
+
+            </div>
+            <form id="formulario" action="">
+                <input type="text" placeholder="usuario...">
+                <input type="text" placeholder="mensaje...">
+                <input type="submit" value="Enviar"">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        
+    </footer>
+    
+</body>
+</html>
